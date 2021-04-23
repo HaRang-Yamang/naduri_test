@@ -32,6 +32,7 @@ sample.jsp : 본문 내용을 제외한 기본 틀 jsp입니다. 삭제하지 �
 
 마이 페이지 : localhost:8088/naduri/views/myPage.jsp -> 수정 필요
 
-상세 페이지 : 작업 중
+상세 페이지 : http://localhost:8088/naduri/views/detail/detailHeritage.jsp
+	- 상세 페이지 각 항목은 include 파일로 대체
 
 리뷰 작성 페이지 : http://localhost:8088/naduri/views/reviewWrite.jsp

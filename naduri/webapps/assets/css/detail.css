@@ -1,0 +1,644 @@
+@charset "UTF-8";
+
+.detailArea_heritage{
+    padding-top : 150px;
+    padding-bottom : 150px;
+}
+
+ /* 상단 슬라이드 css 시작 */
+
+ .slider-images ul,  .slider-images ul li {
+    list-style:none;
+    height: 400px;
+}
+ .slidebox {
+    max-width:1200px;
+    height:100%;
+    margin:0 auto;
+    position:relative;
+}
+ .slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
+ .slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#fff;width:100%;transition:all 1s;border: none;}
+ .slidebox .slidelist .slideitem > a {display:inline-block;margin: 5px;width:auto;position:relative;}
+ .slidebox .slidelist .slideitem > a img {max-width:100%;}
+ 
+ .slidebox .slide-control [class*="control"] label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
+ .slidebox .slide-control [class*="control"] label.prev {left:-50px;background: url('/naduri/assets/images/icon/left.png') center center / 50% no-repeat;}
+ .slidebox .slide-control [class*="control"] label.next {right:-50px;background: url('/naduri/assets/images/icon/right.png') center center / 50% no-repeat;}
+ 
+ [name="slide"] {display:none; }
+ #slide01:checked ~ .slidelist .slideitem {left:0;}
+ #slide02:checked ~ .slidelist .slideitem {left:-100%;}
+ #slide03:checked ~ .slidelist .slideitem {left:-200%;}
+ #slide04:checked ~ .slidelist .slideitem {left:-300%;}
+ 
+ .slide-control [class*="control"] {display:none;}
+ #slide01:checked ~ .slide-control .control01 {display:block;}
+ #slide02:checked ~ .slide-control .control02 {display:block;}
+ #slide03:checked ~ .slide-control .control03 {display:block;}
+ #slide04:checked ~ .slide-control .control04 {display:block;}
+
+ /* 상단 슬라이드 css 끝 */
+
+
+/* infoArea 상단 정보 영역 */
+.infoArea{
+    padding-top : 115px;
+    padding-bottom : 115px;
+ }
+.infoTitle h2, .infoTitle button{
+    display : inline-block;
+    vertical-align : middle;
+}
+.infoTitle h2:nth-child(2){
+    margin-left : 5px;
+}
+.infoTitle button{
+    position : relative;
+    top : -4px;
+    margin-left : 5px;
+}
+/* 별 아이콘 */
+.markIcon{
+    width: 15px;
+   display: flex;  
+   bottom: 10px;
+   right: 10px;
+   color: red;
+   cursor: pointer;
+   float: right;
+}
+.markIcon i:active{
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: red;
+}
+
+/* 키워드 */
+.keyword{
+    padding-top : 10px;
+}
+.keyword ul{
+    margin-left : -2rem;
+}          
+.keyword li {
+    display : inline-block;
+    height : 30px;
+    width: auto;
+    border-radius : 5px;
+    background: var(--main-color);
+    cursor: pointer;
+    text-align: center;
+    line-height : 25px;
+    padding : 0 15px 0 15px;
+}
+
+/* 장소 정보 */
+.infoDetailArea{
+    padding-top : 20px;
+}
+.infoTable{
+    display : inline-block;
+    width : 300px;
+    vertical-align : top;
+}
+.infoTable table{
+    display : inline-block;
+}
+.infoTable td{
+    padding : 5px 0;
+}
+.infoTable td:first-child{
+    width : 60px;
+    color: var(--main-color);
+    font-weight : 700;
+    text-align : justify;
+    text-align-last : justify;
+}
+.infoTable td:nth-child(2){
+    padding-left : 10px;
+}
+.infoDetail{
+    float : right;
+    width : 650px;
+    vertical-align : top;
+    text-align : justify;
+    margin-left : 30px;
+}
+.infoDetail .a{
+    position: relative;
+    width: 650px;
+    height: auto;
+}
+
+
+/* 근처 장소 영역 css */
+.nearArea{
+    padding-bottom : 100px;
+}
+/* 지도 css */
+.mapArea{
+    width : 1000px;
+    height : 750px;
+    background : var(--main-color);
+    /* 실제 지도 삽입 시 background 설정은 삭제해주세요 */
+}
+
+/* 근처 장소 리스트 */
+.nearPlace{
+    padding-top : 30px;
+}
+.green_title{
+    display : inline-block;
+    vertical-align : middle;
+    width : 9px;
+    height : 35px;
+    background : var(--main-color);
+}
+.green_title+h3{
+    display : inline-block;
+    vertical-align : middle;
+    margin-left : 10px;
+    padding-top : 4.5px;
+}
+
+.nearPlace_list{
+    padding-top : 15px;
+}
+.nearPlace_list>ul>li{
+    display : inline-block;
+    width : 300px;
+    margin-left : -2rem;
+    margin-left : 15px;
+}
+.imgArea{
+    display : inline-block;
+    width : 120px;
+    height : 120px;
+    vertical-align : top;
+    background : var(--gray-color);
+}
+.nearPlace_info{
+    display : inline-block;
+    width : 150px;
+    margin-left : 10px;
+    vertical-align : top;
+}
+.tagArea{
+    margin : 8px 0 8px 0;
+}
+.score{
+    padding : 5px 10px;
+    vertical-align : top;
+    padding-top : 1.5px;
+    border-radius : 5px;
+    font-size : 12px;
+    text-align : center;
+    background : var(--main-color);
+}
+.score.blue{
+    background : var(--blue-color);
+}
+
+
+/* 박세홍 css */
+
+#container{
+
+    padding-bottom : 150px;
+}
+p, summary{
+    font-size : 12px;
+}
+
+/* 상단 tab css */
+.tabs li{
+    display : block;
+    float: left;
+    width : 500px;
+    height : 48px;
+    background : white;
+    cursor : pointer;
+}
+.tabs li:first-child{
+    margin-left : -2rem;
+}
+.tabs li>h3{
+    text-align : center;
+    margin-top : 11px;
+}
+.tabs li.current{
+    box-sizing : border-box;
+    background : var(--light-gray);
+}
+.tabs li .chk {
+    height: 3px;
+    visibility: hidden;
+}
+.tabs li.current .chk {
+    height: 3px;
+    background : var(--main-color);
+    visibility: visible;
+}
+.tab-content{
+    display : none;
+}
+.tab-content.current{
+    display : inherit;
+}
+
+/* 필터 영역 */
+.filter{
+    background : var(--light-gray);
+    padding : 110px 0px 45px;
+}
+
+.write_btn{
+    position : relative;
+    text-align : center;
+}
+.write_btn input{
+    background : var(--gray-color);
+    font-size : 12px;
+    text-align : center;
+    border : 0;
+    border-radius : 5px;
+    width : 110px;
+    height : 40px;
+    cursor : pointer;
+    margin-bottom : 20px;
+}
+.write_btn input:hover{
+    background : var(--main-color);
+}
+
+/* 리뷰 테이블 */
+.review_table table{
+    width : 800px;
+    margin-top : 45px;
+    font-size : 12px;
+}
+.review_table table tr:first-child{
+    font-size : 14px;
+    font-weight : 500;
+}
+.review_table table tr:first-child > th{
+    padding-bottom : 26px;
+}
+.review_table table tr td:nth-child(-n+3){
+    width : 140px;
+}
+.review_table table tr td{
+    padding-bottom : 10px;
+}
+
+/* 리뷰, qna 작성자 프로필 */
+.content{
+    padding : 75px 0 25px 0;
+}
+/* 마우스 호버 */
+.content.mouse:hover{
+    background : var(--light-gray);
+}
+.review, .qna{
+    width : 700px;
+}
+.review_user, .qna_user{
+    width : 100px;
+    display : inline-block;
+    vertical-align : top;
+}
+.user_img{
+    width : 100px;
+    height : 100px;
+    border-radius : 50%;
+    border : 1px solid var(--main-color);
+}
+.user_text p{
+    width : 100px;
+    margin-top : 5px;
+    text-align : center;
+}
+.user_text p:first-child{
+    margin-top : 15px;
+}
+
+/* 리뷰, qna 내용 */
+.review_content, .qna_content{
+    width : 550px;
+    margin-left : 30px;
+    display : inline-block;
+    vertical-align : middle;
+    word-break:keep-all;
+}
+.review_content h4{
+    display : inline-block;
+    vertical-align : middle;
+}
+.score.toRight{
+    font-size : 14px;
+    float : right;
+}
+.review_content div, .qna_content div{
+    margin-top : 40px;
+}
+summary{
+    float : right;
+    list-style : none;
+    outline : none;
+}
+
+/* 더보기 삼각형 생략 */
+summary::-webkit-details-marker,
+summary::-webkit-details-marker {
+    display: none;
+  }
+
+.review_content_more div,
+.qna_content_more div,
+.a div{
+    padding-top : 10px;
+    font-size : 12px;
+    clear:both;
+    word-break:keep-all;
+}
+
+/* 작성된 리뷰 필터 */
+.filter_content{
+    margin-top : 10px;
+}
+.filter_content table{
+    float : left;
+    font-size : 12px;
+}
+.filter_content tr td:first-child{
+    width : 60px;
+    padding-right : 10px;
+    color: var(--main-color);
+    font-weight : 500;
+    text-align : justify;
+}
+
+/* 리뷰 업로드 이미지 */
+.review_img_area{
+    width : 550px;
+    float : right;
+    vertical-align : top;
+}
+.review_img{
+    width : 120px;
+    height : 120px;
+    display : inline-block;
+    vertical-align : top;
+    margin-right : 10px;
+    background : var(--gray-color);
+    cursor : pointer;
+}
+.review_img:last-child{
+    margin-right : none;
+    filter : brightness(0.3);
+}
+
+
+
+/* 댓글 내용 */
+.comment{
+    width : 700px;
+    margin-top : 50px;
+    margin-bottom : 50px;
+}
+/* 작성된 댓글 내용 */
+.written_comment_area{
+    display : inline-block;
+    width : 550px;
+    margin-left : 30px;
+    vertical-align : top;
+}
+
+/* 구분 선 */
+.green_bar.short{
+    width : 800px;
+}
+.green_bar.thick{
+    height : 2px;
+}
+
+/* 댓글 작성자 정보 */
+.comment_user{
+    width : 100px;
+    display : inline-block;
+    vertical-align : top;
+
+}
+.comment_user_img{
+    width : 100px;
+    text-align : center;
+}
+.write_comment_area{
+    width : 550px;
+    display : inline-block;
+    margin-left : 30px;
+    vertical-align : top;
+}
+
+/* 댓글 입력 & 전송 & 취소 */
+#comment_area{
+    width : 550px;
+    height : 80px;
+    border : 2px solid var(--main-color);
+    background : var(--light-gray);
+    resize : none;
+}
+.comment_btn{
+    float : right;
+}
+input[type=submit], input[type=reset]{
+    height : 32px;
+    float : left;
+    margin-top : 10px;
+    border-radius : 5px;
+    text-align : center;
+    font-size : 12px;
+    cursor : pointer;
+}
+input[type=submit]{
+    width : 90px;
+    background : var(--main-color);
+}
+input[type=reset]{
+    width : 70px;
+    margin-left : 7px;
+    border : 1px solid var(--gray-color);
+    background : var(--white-color);
+}
+
+
+/* 넘버링 */
+.numArea {
+    width: 800px;
+    margin-top : 80px;
+
+}
+.numArea ul{
+    margin-left : 150px;
+}
+.numArea ul li {
+    display: inline-block;
+    border-radius: 5px;
+    width: 26px;
+    height: 26px;
+    padding-top: 6px;
+    vertical-align: top;
+    text-align : center;
+    cursor : pointer;
+}
+.numArea ul li:nth-child(n + 2):nth-child(-n + 12) {
+    margin-left: 6px;
+}
+.numArea ul li:nth-child(n + 2):nth-child(-n + 11):hover {
+    background: var(--main-color);
+    color: white;
+}
+.arrLeft::after {
+    content: "";
+    width: 14px; /* 사이즈 */
+    height: 14px; /* 사이즈 */
+    border-top: 2px solid var(--main-color); /* 선 두께 */
+    border-right: 2px solid var(--main-color); /* 선 두께 */
+    display: inline-block;
+    transform: rotate(225deg); /* 각도 */
+}
+.arrRight::after {
+    content: "";
+    width: 14px; /* 사이즈 */
+    height: 14px; /* 사이즈 */
+    border-top: 2px solid var(--main-color); /* 선 두께 */
+    border-right: 2px solid var(--main-color); /* 선 두께 */
+    display: inline-block;
+    transform: rotate(45deg); /* 각도 */
+    position: absolute;
+}
+
+/* 자주 묻는 질문 */
+#FAQ{
+    padding : 150px 0 150px 0;
+}
+.FAQ_title{
+    vertical-align : middle;
+}
+.FAQ_content_area{
+    margin-top : 30px;
+    margin-left : 25px;
+}
+
+.FAQ_content:nth-child(n+2){
+    margin-top : 20px;
+}
+/* 삼각형 안보이게 하기 */
+.FAQ_content > summary{
+    list-style : none;
+}
+.FAQ_content > summary::-webkit-details-marker {
+    display : none;
+}
+/* 삼각형 추가 */
+.FAQ_content > summary div{
+    display : inline-block;
+    vertical-align : middle;
+}
+.FAQ_content > summary:before {
+    content: "▶";
+    margin-right : 10px;
+    color : var(--main-color);
+}
+.FAQ_content[open] summary:before {
+    content: "▼";
+}
+
+/* FAQ 내용 */
+.faq_question{
+    word-break : keep-all;
+    cursor : pointer;
+    outline : none;
+}
+.faq_answer{
+    width : 950px;
+    margin-top : 10px;
+    padding : 10px;
+    margin-left : 20px;
+    word-break : keep-all;
+    background : var(--light-gray);
+
+}
+/* 박세홍 css 끝 */
+
+
+
+
+
+
+/* 비슷한 장소 추천 */
+
+.rp{
+    display: inline-block;
+}
+.recommendPlace button.rp{
+    float: right;
+    border: none;
+    background: none;
+}
+.slidebox{
+    margin-top : 50px;
+}
+li a:before{
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background:var(--black-color);
+}
+li a:hover:before{
+    opacity:0.86;
+}
+li .info{
+position:absolute;
+top:0;
+left:23px;
+z-index:20;
+opacity:0;
+transition: all 0.3s;
+width: 318px;
+height: 400px;
+}
+li a:hover .info{
+    transform:translateY(23px);
+    opacity:1;
+   
+}
+li .info h6{
+    height:21px;
+    margin-left:5%;
+    margin-top:5%;
+    padding-left:15px;
+    text-align:left;
+    color:#fff;
+    border-left:#fff 5px solid;
+}
+li .info p{
+    margin-left:5%;
+    padding-left:15px;
+    text-align:left;
+    font-weight:normal;
+    color:#fff;
+   }
+#cg,#ds,#gb,#sy{
+    width: 320px;
+    height: 400px;
+}
+
+

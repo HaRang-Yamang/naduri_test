@@ -73,15 +73,15 @@ p, div, span, input{
     font-size : 12px;
 }
 h2{
-    font-size : 21px;
+    font-size : 21px !important;
     font-weight : 300;
 }
 h3{
-    font-size : 18px;
+    font-size : 18px !important;
     font-weight : 300;
 }
 h4{
-    font-size : 14px;
+    font-size : 14px !important;
     font-weight : 300;
 }
 h5{
