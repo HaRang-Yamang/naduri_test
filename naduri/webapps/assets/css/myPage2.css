@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* 리뷰, qna 작성자 프로필 */
+.content{
+    padding : 75px 0 25px 0;
+}
+/* 마우스 호버 */
+.content.mouse:hover{
+    background : var(--light-gray);
+}
+.review, .qna{
+    width : 700px;
+}
+.review_user, .qna_user{
+    width : 100px;
+    display : inline-block;
+    vertical-align : top;
+}
+.user_img{
+    width : 100px;
+    height : 100px;
+    border-radius : 50%;
+    border : 1px solid var(--main-color);
+}
+.user_text p{
+    width : 100px;
+    margin-top : 5px;
+    text-align : center;
+}
+.user_text p:first-child{
+    margin-top : 15px;
+}
+
+/* 리뷰, qna 내용 */
+.review_content, .qna_content{
+    width : 550px;
+    margin-left : 30px;
+    display : inline-block;
+    vertical-align : middle;
+    word-break:keep-all;
+}
+.qna_content h4{
+    font-size : 14px;
+}
+.review_content h4{
+    display : inline-block;
+    vertical-align : middle;
+}
+.score{
+    width : 53px;
+    height : 28px;
+    float : right;
+    vertical-align : top;
+    padding-top : 1.5px;
+    border-radius : 5px;
+    font-size : 14px;
+    text-align : center;
+    background : var(--main-color);
+}
+.review_content div, .qna_content div{
+    margin-top : 40px;
+}
+.review_content_more > summary, .qna_content_more > summary{
+    float : right;
+    list-style : none;
+    outline : none;
+}
+
+/* 더보기 삼각형 생략 */
+.review_content_more summary::-webkit-details-marker,
+.review_content_more summary::-webkit-details-marker {
+    display: none;
+  }
+
+.review_content_more div, .qna_content_more div{
+    padding-top : 10px;
+    font-size : 12px;
+    clear:both;
+    word-break:keep-all;
+}
+
+/* 작성된 리뷰 필터 */
+.filter_content{
+    margin-top : 10px;
+}
+.filter_content table{
+    float : left;
+    font-size : 12px;
+}
+.filter_content tr td:first-child{
+    width : 60px;
+    padding-right : 10px;
+    color: var(--main-color);
+    font-weight : 500;
+    text-align : justify;
+}
+
+/* 리뷰 업로드 이미지 */
+.review_img_area{
+    width : 550px;
+    float : right;
+    vertical-align : top;
+}
+.review_img{
+    width : 120px;
+    height : 120px;
+    display : inline-block;
+    vertical-align : top;
+    margin-right : 10px;
+    background : var(--gray-color);
+    cursor : pointer;
+}
+.review_img:last-child{
+    margin-right : none;
+    filter : brightness(0.3);
+}
+
+
+
+/* 댓글 내용 */
+.comment{
+    width : 700px;
+    margin-top : 50px;
+    margin-bottom : 50px;
+}
+/* 작성된 댓글 내용 */
+.written_comment_area{
+    display : inline-block;
+    width : 550px;
+    margin-left : 30px;
+    vertical-align : top;
+}
+
+/* 구분 선 */
+.green_bar.short{
+    width : 800px;
+}
+.green_bar.thick{
+    height : 2px;
+}
+
+/* 댓글 작성자 정보 */
+.comment_user{
+    width : 100px;
+    display : inline-block;
+    vertical-align : top;
+
+}
+.comment_user_img{
+    width : 100px;
+    text-align : center;
+}
+.write_comment_area{
+    width : 550px;
+    display : inline-block;
+    margin-left : 30px;
+    vertical-align : top;
+}
+
+/* 댓글 입력 & 전송 & 취소 */
+#comment_area{
+    width : 550px;
+    height : 80px;
+    border : 2px solid var(--main-color);
+    background : var(--light-gray);
+    resize : none;
+}
+.comment_btn{
+    float : right;
+}
+input[type=submit], input[type=reset]{
+    height : 32px;
+    float : left;
+    margin-top : 10px;
+    border-radius : 5px;
+    text-align : center;
+    font-size : 12px;
+    cursor : pointer;
+}
+input[type=submit]{
+    width : 90px;
+    background : var(--main-color);
+}
+input[type=reset]{
+    width : 70px;
+    margin-left : 7px;
+    border : 1px solid var(--gray-color);
+    background : var(--white-color);
+}

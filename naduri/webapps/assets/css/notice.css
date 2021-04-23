@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+.noticeListArea, .noticeWriteArea, .noticeDetailArea{
+    padding-top : 150px;
+    padding-bottom : 150px;
+}
+
+.notice_head {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.notice_table {
+    border: none;
+    border-bottom: var(--main-color) solid 3px;
+}
+
+.notice_table tr {
+    line-height: 40px;
+    text-align: center;
+    border-bottom: var(--main-color) solid 1px;
+}
+
+.notice_table tr th {
+    text-align: center;
+    border-top: var(--main-color) solid 3px;
+    border-bottom: var(--main-color) solid 3px;
+    background-color: rgba(178, 191, 80, 0.1);
+    font-size: 13pt;
+    font-weight: 600;
+
+}
+
+.notice_table tr td {
+    text-align: center;
+    position: relative;
+}
+
+#notice_no {
+    width: 125px;
+}
+
+#notice_title {
+    width: 565px;
+}
+
+#notice_writer {
+    width: 178px;
+}
+
+#notice_date {
+    width: 130px;
+}
+
+.notice_writer:hover {
+    cursor: pointer;
+}
+
+.att_icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: block;
+
+}
+
+.notice_att:hover,
+.att_icon:hover {
+    cursor: pointer;
+}
+
+.notice_att {
+    float: left;
+    color: blue;
+}
+
+#textArea {
+    width: 880px;
+    margin: 40px auto 50px auto;
+}
+
+[id*="notice"] {
+    background: white;
+    border-bottom: none;
+}
+
+#notice_title {
+    text-align: center;
+}
+
+[class*=_btn] {
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main-color);
+    width: 150px;
+    line-height: 25px;
+    font-size: 14px;
+    margin: 30px auto 30px auto;
+    display: block;
+}
+
+#input_notice{
+    width: 100%;
+    height: 500px;
+}
+
+.inputFile{
+    position: absolute;
+    left: 2px;
+    top: 9px;
+}
+
+#input_title {
+    width: 500px;
+    line-height: 21px;    
+}
+
+#notice_input {
+    border: var(--gray-color) solid 1px;
+}
+
+textArea {
+    width: calc(100% - 10px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
