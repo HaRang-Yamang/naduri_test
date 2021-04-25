@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-section{
-    margin-left: auto;
-    margin-right: auto;
+.profileArea{
+	padding-top : 150px;
+	padding-bottom : 150px;
 }
 .top_area{
     display: flex;
@@ -309,7 +309,6 @@ section{
 
 
  /*slide CSS */
- * {margin:0;padding:0;box-sizing:border-box;}
  ul, li {list-style:none;}
  
  
@@ -351,7 +350,6 @@ section{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: red;
 }
-
 
 .togolist_area{
     width: 960px;
@@ -413,6 +411,7 @@ section{
     text-shadow: 10px 10px 10px var(--black-color);
     font-weight: 500;
     transform: translate(120px, 110px);
+    margin-bottom : 10px;
     
 }
 .spotInfo p{

@@ -15,7 +15,7 @@
             <div class="user_menu">
                 <h3>Someone<br><span>일반회원</span></h3>
                 <ul>
-                    <li><i class="far fa-user-circle"></i><a href="/naduri/views/myPage.jsp">내 기행록</a></li>
+                    <li><i class="far fa-user-circle"></i><a href="/naduri/views/myPage/myPage.jsp">내 기행록</a></li>
                     <li><i class="far fa-edit"></i><a href="/naduri/views/member/modifyMember.jsp">회원정보 수정</a></li>
                     <li><i class="fas fa-sign-out-alt"></i><a href="">로그아웃</a></li>
                 </ul>
