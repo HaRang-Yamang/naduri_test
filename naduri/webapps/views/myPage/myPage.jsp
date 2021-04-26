@@ -30,11 +30,12 @@
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
     </script>
     
+
 <title>나드리</title>
 </head>
 <body>
 	<%@ include file="../common/header.jsp" %>
-	
+	<!-- 깃 테스트 -->
 	<section>
 	    <div class="profileArea">
 	        <h2 class="hidden">프로필 페이지</h2>
