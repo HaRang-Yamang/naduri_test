@@ -27,7 +27,7 @@
             <h2>회원 가입</h2>
             <!-- 회원가입 폼 -->
             <div class="joinFormArea">
-                <form id="joinForm" method="post">
+                <form id="joinForm" action="/jdbc/memberInsert.do" method="post">
 
                     <div class="join_baisc">
                         <div class="joinTitleArea">
