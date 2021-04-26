@@ -283,7 +283,7 @@
 
                     <!-- 가입하기 버튼 -->
                     <div class="submit_btn">
-                        <button type="button" id="submit_btn">나드리 가입하기</button>
+                        <input type="submit" id="submit_btn" value="드리 가입하기">
                     </div>
                 </form>
             </div>

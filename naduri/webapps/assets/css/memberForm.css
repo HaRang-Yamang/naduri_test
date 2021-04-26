@@ -79,7 +79,7 @@
     display: flex;
 }
 
-button{
+#submit_btn{
 
    height : 25px;
    width: 73px;
