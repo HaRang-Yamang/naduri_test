@@ -232,6 +232,7 @@
 	
 	
 	            </div>
+	            
 	            <div class="modal">
 	                <div class="modal_content" title="클릭하면 창이 닫힙니다.">
 	
@@ -362,4 +363,5 @@
 	                    </div>
 	                </div>
 	            </div>
+	            
 	        </div>

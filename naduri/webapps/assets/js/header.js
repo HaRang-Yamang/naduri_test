@@ -1,11 +1,3 @@
-/* user menu */ 
-const userMenu = document.querySelector('.user_menu');
-const profile = document.querySelector('.profile');
-
-profile.addEventListener('click', () => {
-    userMenu.classList.toggle('active');
-});
-
 // /* map api */
 // var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 // var options = { //지도를 생성할 때 필요한 기본 옵션
@@ -35,3 +27,11 @@ profile.addEventListener('click', () => {
             $(this).addClass('active').siblings().removeClass('active');
         })
     })
+    
+/* user menu */ 
+const userMenu = document.querySelector('.user_menu');
+const profile = document.querySelector('.profile');
+
+profile.addEventListener('click', () => {
+    userMenu.classList.toggle('active');
+});
